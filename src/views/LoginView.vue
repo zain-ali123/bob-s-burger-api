@@ -1,13 +1,19 @@
 <template>
     <div class="grid justify-items-center">
-        <p>welcome???</p>
+        <LoginComponent/>
+        
             
     </div>
     
 </template>
 
 <script>
+import LoginComponent from '@/components/LoginComponent.vue';
 export default {
-    name:'LoginView',
+    name: 'LoginView',
+    components: {
+        LoginComponent
     }
+}
+    
 </script>
