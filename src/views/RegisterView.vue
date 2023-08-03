@@ -1,5 +1,5 @@
 <template>
-    <div class="Register">
+    <div class="grid justify-items-center">
         <h1>Register to App</h1>
         <RegisterComponent />
     </div>
