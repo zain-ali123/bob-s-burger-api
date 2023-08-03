@@ -1,30 +1,35 @@
 
 <template>
-    <div class="hello">
-        <h1>Sign Up</h1>
-        <fieldset>
-            <label for="username">Username<br></label>
-            <input type="text" id="username" v-model="form.username">
-            <span v-if="errors.username" class="error">{{ errors.username }}</span>
-        </fieldset>
-        <fieldset>
-            <label for="email">Email<br></label>
-            <input type="email" id="email" v-model="form.email">
-            <span v-if="errors.email" class="error">{{ errors.email }}</span>
-        </fieldset>
-        <fieldset>
-            <label for="password">Password<br></label>
-            <input type="password" id="password" v-model="form.password">
-            <span v-if="errors.password" class="error">{{ errors.password }}</span>
-        </fieldset>
-        <fieldset>
-            <label for="confirmPassword">Confirm Password<br></label>
-            <input type="password" id="confirmPassword" v-model="form.confirmPassword">
-            <span v-if="errors.confirmPassword" class="error">{{ errors.confirmPassword }}</span>
-        </fieldset>
+        <div class="grid justify-items-center px-32 py-12  shadow-lg">
+             <div class="mb-6">
+                      <label for="Enter Character ID" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Username</label>
+                      <input v-model="form.username" type="text" id="default-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                      <span v-if="errors.username" class="error">{{ errors.username }}</span>
+             </div>
+            <div class="mb-6">
+                        <label for="Enter Character ID" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Email</label>
+                        <input v-model="form.email" type="text" id="default-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <span v-if="errors.email" class="error">{{ errors.email}}</span>
+            </div>
+        
+               
+        
+            <div>
+                        <label for="Enter Character ID" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Password</label>
+                        <input type="password" v-model="form.password"  id="default-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <span v-if="errors.password" class="error">{{ errors.password }}</span>
+            </div>
+            <div>
+                        <label for="Enter Character ID" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm Password</label>
+                        <input type="password" v-model="form.confirmPassword"  id="default-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <span v-if="errors.confirmPassword" class="error">{{ errors.confirmPassword }}</span>
+            </div>
 
-        <button type="submit" @click="submitForm">Submit{{ getForm(form) }}</button>
-    </div>
+            <div class="mt-5">
+                       <button @click="submitForm" type="button" class="text-white bg-blue-700 hover:bg-blue-800  font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Login</button>
+            </div>
+        </div>
+    
 </template>
 
 <script>
