@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import SideBar from '../components/SideBar.vue'
 import LoginView from '../views/LoginView.vue'
+import RegisterView from '../views/RegisterView.vue'
 // import FilterById from '../components/FilterById.vue'
 // import FilterByName from '../components/FilterByName.vue'
 // import FilterByHair from '../components/FilterByHairColor.vue'
@@ -15,6 +16,11 @@ const routes = [
     path: '/',
   
     component: LoginView
+  },
+      {
+    path: '/signup',
+  
+    component: RegisterView
   },
 
   {

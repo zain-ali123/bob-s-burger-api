@@ -1,6 +1,9 @@
 <template>
-    <div class="grid justify-items-center"> </div>
-    <p>we comr and login</p>
+    <div class="grid justify-items-center">
+        <p>welcome???</p>
+            
+    </div>
+    
 </template>
 
 <script>
