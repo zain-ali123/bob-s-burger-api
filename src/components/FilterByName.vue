@@ -16,6 +16,9 @@
                 <p>{{ c.name }}</p>
                 <p>{{ c.id }}</p>
                 <p>{{ c.hair }}</p>
+                
+                <p>{{ c.gender }}</p>
+
 
             </div>
             </li>

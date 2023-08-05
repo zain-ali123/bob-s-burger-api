@@ -1,16 +1,31 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import SideBar from '../components/SideBar.vue'
+// import SideBar from '../components/SideBar.vue'
 import LoginView from '../views/LoginView.vue'
+import HomeView from '../views/HomeView.vue'
 import RegisterView from '../views/RegisterView.vue'
-// import FilterById from '../components/FilterById.vue'
-// import FilterByName from '../components/FilterByName.vue'
-// import FilterByHair from '../components/FilterByHairColor.vue'
+import FilterById from '../components/FilterById.vue'
+import FilterByName from '../components/FilterByName.vue'
+import FilterByHair from '../components/FilterByHairColor.vue'
 
 const routes = [
   {
     path: '/home',
   
-    component: SideBar
+    component: HomeView,
+    children: [
+      {
+        path: 'filterById',
+        component:FilterById
+      },
+      {
+        path: 'filterByName',
+        component:FilterByName
+      },
+      {
+        path: 'filterByHair',
+        component:FilterByHair
+      }
+    ]
   },
     {
     path: '/',

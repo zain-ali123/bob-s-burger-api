@@ -1,10 +1,15 @@
 <template>
-
-    <NavBar/>
-    <!-- <SideBar/> -->
-
-
+  <nav>
+    
+  </nav>
+<NavBar/>
   <router-view />
+  <!-- <NavBar/>
+  <SideBar/>
+  <div class="flex">
+    <router-view />
+    </div> -->
+
 </template>
 <script>
 // import SideBar from './components/SideBar.vue';
@@ -14,7 +19,7 @@ import NavBar from './components/NavBar.vue';
 export default {
   components: {
     NavBar,
-      // SideBar,
+    //   SideBar,
     }
   }
 </script>

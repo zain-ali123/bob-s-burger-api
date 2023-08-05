@@ -19,6 +19,9 @@
             <li>
               <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 ">Contact</a>
             </li>
+            <li class="absolute top-0 right-0 h-16 w-16">
+                <img src="https://www.bobsburgersapi.com/_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=48&q=75&dpl=dpl_2pzj43TiVvTbKoNqcKtvT1nPgfFK" alt="">
+            </li>
           </ul>
         </div>
       </div>
